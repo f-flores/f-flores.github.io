@@ -1,0 +1,357 @@
+/* stylesheet file*/
+/* left margin */
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0; }
+  html body {
+    /* Background source: https://www.toptal.com/designers/subtlepatterns/?s=wood */
+    background: white;
+    padding: 0;
+    height: 100vh;
+    /* outline when hovering over an image that is intended to be a link */
+    /* "clearfix" hack to neatly align block elements */
+    /* styles 960 main content box */
+    /* styles left content box */
+    /* Connect with me section */
+    /* attributes for portfolio project content box */
+    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
+    html body h1 {
+      text-shadow: 2px 2px black; }
+    html body h2 {
+      font-family: "Arvo", sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      padding: 0; }
+    html body h3 {
+      font-family: "Oswald", serif;
+      font-weight: bold;
+      font-size: 12px;
+      text-align: center;
+      margin: 5px 0;
+      padding: 0;
+      z-index: 1;
+      position: relative; }
+    html body .center-burger {
+      margin-top: 20px; }
+    html body .clear {
+      clear: both; }
+    html body .intro-text {
+      position: absolute;
+      top: 35%;
+      left: 5%;
+      text-align: center;
+      opacity: 0.9; }
+    html body .custom-hcenter {
+      text-align: center !important; }
+    html body .custom-label {
+      background: gray !important;
+      text-align: center !important;
+      height: 35px !important;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-weight: bold !important; }
+    html body #particles-js {
+      height: 90%;
+      background: linear-gradient(to bottom right, #31456b, #111826);
+      z-index: 10; }
+    html body #header {
+      width: 100%;
+      background: linear-gradient(to bottom right, #111826, #31456b);
+      margin-bottom: 20%;
+      height: 80px;
+      line-height: 80px;
+      position: fixed;
+      z-index: 5;
+      /* navigation bar */ }
+      html body #header .custom-brand {
+        text-decoration: none;
+        float: left;
+        margin: 0px 0 0 20px;
+        font-size: 20px;
+        color: white;
+        font-family: "Wellfleet", sans-serif;
+        font-weight: bold; }
+      html body #header #nav {
+        float: left; }
+        html body #header #nav ul {
+          list-style: none;
+          display: block; }
+        html body #header #nav li {
+          float: left;
+          padding-left: 20px; }
+          html body #header #nav li a {
+            color: #111826;
+            text-shadow: 1px 1px #C5D9C7;
+            text-decoration: none;
+            opacity: 0.6;
+            font-size: 11px;
+            font-family: "Wellfleet", sans-serif; }
+          html body #header #nav li a.active {
+            color: #111826;
+            text-shadow: 1px 1px white;
+            opacity: 1;
+            border-bottom: 2px solid #111826; }
+          html body #header #nav li a:hover {
+            color: #C5D9C7;
+            text-shadow: 1px 1px #111826;
+            opacity: 1; }
+    html body #Intro, html body #About, html body #Portfolio {
+      width: 100%; }
+    html body #Intro {
+      color: black;
+      margin: 0;
+      height: 980px;
+      padding: 0 0 0 0;
+      background-size: cover; }
+    html body #About {
+      background: url("../images/wood_pattern.png") 406px 634px repeat !important;
+      color: #111826;
+      margin: 0;
+      padding: 200px 30px 130px 30px;
+      background-size: cover; }
+    html body #Portfolio {
+      background: url("../images/TexturesCom_LeavesDead0019_1_seamless_S.jpg") 1024px 1024px repeat !important;
+      color: white;
+      text-shadow: 1px 1px black;
+      height: 6800px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 200px 30px 0 30px; }
+    html body #Skills {
+      background: url("../images/TexturesCom_MarbleBase0040_1_seamless_S.png") 512px 512px repeat !important;
+      color: black;
+      height: 2100px;
+      padding: 250px 0 0 20px;
+      background-size: cover; }
+    html body #Contact {
+      background: url("../images/TexturesCom_LandscapeVarious0097_S.jpg") 1024px 882px repeat !important;
+      color: white;
+      text-shadow: 1px 1px goldenrod;
+      height: 800px;
+      padding: 260px 0 0 20px; }
+    html body figure > a > img {
+      width: 60%;
+      height: 80%; }
+    html body p {
+      text-align: justify;
+      font-weight: bold;
+      font-size: 95%; }
+    html body a > img:hover {
+      outline: 2px solid #4aaaa5; }
+    html body .row::after {
+      content: "";
+      clear: both;
+      display: table-footer-group; }
+    html body .clearfix::after {
+      content: "";
+      display: block;
+      clear: both; }
+    html body .main-content {
+      box-sizing: border-box;
+      padding: 20px 0px 10px 10px;
+      margin-left: 10px; }
+      html body .main-content p {
+        text-align: justify;
+        margin: 0px 15px;
+        line-height: 2.0; }
+    html body .custom-bg {
+      background-color: transparent; }
+    html body .main-box {
+      margin-left: 2%; }
+      html body .main-box img {
+        float: left;
+        width: 30%;
+        height: 30%;
+        margin: 0% 4% 0% 2%; }
+    html body .connect-block {
+      float: right; }
+    html body .media-links {
+      height: 25px;
+      /* equals max image height */
+      white-space: nowrap;
+      text-align: center;
+      margin-top: 27.5px; }
+      html body .media-links img {
+        float: right;
+        max-width: 25px;
+        max-height: 25px;
+        vertical-align: middle; }
+    html body .github-img {
+      filter: invert(100%); }
+    html body .image-container {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 200;
+      height: 290; }
+    html body .image-container .caption-text {
+      position: absolute;
+      z-index: 2;
+      margin-left: 21%;
+      text-align: center;
+      background-color: #4aaaa5;
+      width: 50%;
+      height: 20%;
+      /* !important; */
+      top: 55%;
+      /* !important; */
+      padding: 10px;
+      font-size: 110%;
+      color: white;
+      font-weight: normal; }
+    html body .wrapper {
+      padding: 0; }
+    html body .custom-footer {
+      background-color: #666666;
+      border-color: #4aaaa5;
+      border-style: solid;
+      color: white;
+      border-width: 10px 0px 0px 0px; }
+      html body .custom-footer p {
+        text-align: center;
+        font-size: 80%;
+        line-height: 1;
+        padding: 25px;
+        margin: 0; }
+    html body .contact-form ul {
+      margin-bottom: 20px; }
+    html body .contact-form li {
+      margin-bottom: 10px; }
+    html body label,
+    html body input[type=text],
+    html body input[type=email],
+    html body textarea {
+      display: block;
+      width: 50%; }
+    html body input[type=text],
+    html body input[type=email],
+    html body textarea {
+      height: 35px;
+      padding: 0 10px;
+      font-size: 14px;
+      border: 1px solid #ddd; }
+    html body textarea {
+      height: 200px; }
+    html body input[type=submit] {
+      padding: 10px 30px;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      background: #4aaaa5;
+      border: 0 none; }
+    html body input[type=submit]:hover {
+      background-color: #1D5959;
+      text-shadow: 1px 1px #1AD7E5; }
+
+/* small portrait size */
+@media only screen and (min-width: 327px) {
+  body h1 {
+    font-size: 55px; }
+  body h2 {
+    font-size: 40px; }
+  body h3 {
+    font-size: 25px;
+    text-align: center !important; }
+  body #header {
+    height: 80px !important;
+    margin-top: 20px !important; } }
+
+/* 'sm' media query */
+@media only screen and (min-width: 576px) {
+  body .aside-lm {
+    margin-left: 10%; }
+  body .intro-text {
+    left: 40% !important; }
+  body #nav {
+    float: left;
+    margin: 1% 0% 5% 0%;
+    padding: 0px 30px; }
+    body #nav li {
+      padding-left: 30px; }
+      body #nav li a {
+        color: white !important;
+        text-shadow: none !important; }
+      body #nav li a.active {
+        color: white !important;
+        text-shadow: 1px 1px #111826 !important; }
+      body #nav li a:hover {
+        color: white !important;
+        text-shadow: 1px 1px #111826 !important; }
+  body #About {
+    padding: 135px 30px 130px 30px !important; }
+  body #Skills {
+    padding: 140px 30px 0 30px !important;
+    height: 900px !important; }
+  body #Contact {
+    height: 800px !important;
+    padding: 120px 0 !important; } }
+
+/* navbar font breakpoint media query */
+@media only screen and (min-width: 851px) {
+  #nav a {
+    font-size: 13.2px; } }
+
+@media only screen and (max-width: 1013px) and (min-width: 851px) {
+  .custom-brand {
+    font-size: 30px !important; }
+  #nav a {
+    font-size: 18.7px; }
+  .media-links {
+    height: 50px;
+    /* equals max image height */
+    margin-top: 15px; }
+    .media-links img {
+      max-width: 50px;
+      max-height: 50px; } }
+
+/* 'md' media query */
+@media only screen and (min-width: 768px) {
+  body #nav {
+    float: left;
+    margin: 0% 0 0 5%; }
+    body #nav li {
+      padding-left: 40px; }
+  body #Portfolio {
+    padding: 135px 0 130px 0 !important;
+    height: 1500px !important; }
+  body .image-container .caption-text {
+    font-size: 75% !important; } }
+
+/* 'lg' media query */
+@media only screen and (min-width: 992px) {
+  body #nav {
+    float: left;
+    margin: 0% 0 0 5%; }
+    body #nav li {
+      padding-left: 60px; } }
+
+/* 'xl' media query */
+@media only screen and (min-width: 1200px) {
+  body #nav {
+    float: left;
+    margin: 0% 0 0 5%; }
+    body #nav li {
+      padding-left: 60px; }
+  body #Portfolio {
+    padding: 135px 0 130px 0 !important;
+    height: 1900px !important; } }
+
+/* @media only screen and (min-width: $px-tblt-low) and (max-width: 350px) {
+  .image-container .caption-text {
+    font-size: 80% !important;
+  }
+
+      .center {
+      // margin: 0 auto;
+    }
+
+    .content{
+      // margin: 0 0;
+      // width: $content-width-px;
+      // margin: 0 auto;
+    }
+} */

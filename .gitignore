@@ -1,0 +1,8 @@
+gulpfile.js
+.vscode
+public/assets/css/style.scss
+node_modules
+server.js
+package.json
+yarn.lock
+package-lock.json
