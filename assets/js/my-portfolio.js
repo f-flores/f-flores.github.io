@@ -1,7 +1,12 @@
 $(document).ready(function () {
   const IMG_DIR = "./assets/images/";
   const MAX_PROJS_PER_ROW = 3;
+  const MIN_MSG_LENGTH = 2;
   const GITHUB_LOGO_IMG = "github-128.png";
+  const contactError = $("#contact-error");
+  const contactnameError = $("#contactname-error");
+  const contactemailError = $("#contactemail-error");
+  const contactmsgError = $("#contactmsg-error");
 
   // -------------------------------------------------------------------------------------------------
   // parallax effect
@@ -217,13 +222,41 @@ $(document).ready(function () {
     $(".connect-with-me").append(mediaLinks);
   }
 
+  // validate contact form submission
+  // ==========================================================================
   function handleContactForm() {
     const contactName = $("#contact-name").val(),
           contactEmail = $("#contact-email").val(),
           contactMsg = $("#contact-message").val();
+    let submitError = false;
 
     event.preventDefault();
+    clearContactErrorDivs();
+    hideContactErrorDivs();
+
+    if (!validName(contactName)) {
+      displayErrorMessage(contactnameError, "Please enter name.");
+      submitError = true;
+    }
+
+    if (!validEmail(contactEmail)) {
+      displayErrorMessage(contactemailError, "Enter valid email.");
+      submitError = true;
+    }
+
+    console.log("contactMsg.length");
+    console.log(contactMsg);
+    if (contactMsg.length < MIN_MSG_LENGTH) {
+      displayErrorMessage(contactmsgError, "Please type in your message.");
+      submitError = true;
+    }
+
     if (contactName === "" || contactEmail === "" || contactMsg === "") {
+      displayErrorMessage(contactError, "Please fill out all of the form fields");
+      submitError = true;
+    }
+
+    if (submitError) {
       return;
     }
 
@@ -246,6 +279,30 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
 
   fillPortfolioInfo();
   fillConnectWithMeBoxes();
-  // $(document).on("click", "#contact-submit", handleContactForm);
+  $(document).on("click", "#contact-submit", handleContactForm);
+
+  // ====================================================================
+  // CLEAR DIV FUNCTIONS
+  // ====================================================================
+    // ------------------------------------------------------------------------------------------------
+  // clearContactErrorDivs empties out error validation divs
+  //
+  function clearContactErrorDivs() {
+    $(contactError, contactnameError, contactemailError, contactmsgError).
+    removeClass("bg-danger").
+    addClass("bg-white").
+    empty();
+  }
+
+    // -------------------------------------------------------------------------------------------------
+  // hide signup error divs so they don't take up space on the view
+  //
+  function hideContactErrorDivs() {
+    $(contactError).hide();
+    $(contactnameError).hide();
+    $(contactemailError).hide();
+    $(contactmsgError).hide();
+  }
+
 
 });
