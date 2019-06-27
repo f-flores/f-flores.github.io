@@ -246,6 +246,6 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
 
   fillPortfolioInfo();
   fillConnectWithMeBoxes();
-  $(document).on("click", "#contact-submit", handleContactForm);
+  // $(document).on("click", "#contact-submit", handleContactForm);
 
 });
