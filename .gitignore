@@ -1,6 +1,6 @@
 gulpfile.js
 .vscode
-public/assets/css/style.scss
+assets/css/style.scss
 node_modules
 server.js
 package.json
