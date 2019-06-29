@@ -14,7 +14,6 @@ html {
     /* "clearfix" hack to neatly align block elements */
     /* styles 960 main content box */
     /* styles left content box */
-    /* Connect with me section */
     /* attributes for portfolio project content box */
     /* caption_text styles the "text over image" caption on top of each portfolio image */ }
     html body h1 {
@@ -77,15 +76,18 @@ html {
         font-family: "Wellfleet", sans-serif;
         font-weight: bold; }
       html body #header #nav ul {
-        list-style: none; }
+        list-style: none;
+        background: linear-gradient(to bottom right, #111826, #31456b);
+        line-height: 36px;
+        /* Connect with me section */ }
         html body #header #nav ul li {
-          padding-left: 20px; }
+          padding: 0px 20px; }
           html body #header #nav ul li a {
             color: #111826;
             text-shadow: 1px 1px #C5D9C7;
             text-decoration: none;
             opacity: 0.6;
-            font-size: 24px;
+            font-size: 18px;
             font-family: "Wellfleet", sans-serif; }
           html body #header #nav ul li a.active {
             color: #111826;
@@ -96,6 +98,16 @@ html {
             color: #C5D9C7;
             text-shadow: 1px 1px #111826;
             opacity: 1; }
+        html body #header #nav ul .media-links {
+          height: 50px;
+          /* equals max image height */
+          white-space: nowrap;
+          margin-top: 27.5px; }
+          html body #header #nav ul .media-links img {
+            float: left;
+            max-width: 50px;
+            max-height: 50px;
+            vertical-align: middle; }
     html body #Intro, html body #About, html body #Portfolio {
       width: 100%; }
     html body #Intro {
@@ -165,18 +177,8 @@ html {
         height: 30%;
         margin: 0% 4% 0% 2%; }
     html body .connect-block {
-      float: right; }
-    html body .media-links {
-      height: 25px;
-      /* equals max image height */
-      white-space: nowrap;
-      text-align: center;
-      margin-top: 27.5px; }
-      html body .media-links img {
-        float: right;
-        max-width: 25px;
-        max-height: 25px;
-        vertical-align: middle; }
+      float: left;
+      padding-bottom: 20px; }
     html body .github-img {
       filter: invert(100%); }
     html body .image-container {
@@ -251,7 +253,7 @@ html {
     margin: 1% 0% 5% 0%;
     padding: 0px 30px; }
     body #nav ul {
-      display: block; }
+      display: block !important; }
       body #nav ul li {
         padding-left: 30px; }
         body #nav ul li a {
@@ -274,61 +276,6 @@ html {
     padding: 120px 0; } }
 
 /* navbar font breakpoint media query */
-@media only screen and (max-width: 851px) and (min-width: 327px) {
-  #nav ul {
-    display: block; }
-    #nav ul a {
-      font-size: 28.8px;
-      color: green; } }
-
-@media only screen and (max-width: 1013px) and (min-width: 852) {
-  .custom-brand {
-    font-size: 30px; }
-  #nav ul {
-    display: block; }
-    #nav ul a {
-      font-size: 40.8px;
-      color: lightgoldenrodyellow; }
-  .media-links {
-    height: 50px;
-    /* equals max image height */
-    margin-top: 15px; }
-    .media-links img {
-      max-width: 50px;
-      max-height: 50px; } }
-
-/* 'md' media query */
-@media only screen and (min-width: 768px) {
-  body #nav {
-    float: left;
-    margin: 0% 0 0 5%; }
-    body #nav li {
-      padding-left: 40px; }
-  body #Portfolio {
-    padding: 135px 0 130px 0;
-    height: 1500px; }
-  body .image-container .caption-text {
-    font-size: 75%; } }
-
-/* 'lg' media query */
-@media only screen and (min-width: 992px) {
-  body #nav {
-    float: left;
-    margin: 0% 0 0 5%; }
-    body #nav li {
-      padding-left: 60px; } }
-
-/* 'xl' media query */
-@media only screen and (min-width: 1200px) {
-  body #nav {
-    float: left;
-    margin: 0% 0 0 5%; }
-    body #nav li {
-      padding-left: 60px; }
-  body #Portfolio {
-    padding: 135px 0 130px 0;
-    height: 1900px; } }
-
 /* @media only screen and (min-width: $px-tblt-low) and (max-width: 350px) {
   .image-container .caption-text {
     font-size: 80% !important;
