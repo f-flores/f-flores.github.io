@@ -23,7 +23,7 @@ $(document).ready(function () {
         $(this).click(function () {
           $("#nav li a").removeClass("active");
           $(this).addClass('active');
-          $('html, body').animate({ scrollTop: targetOffset }, 1000);
+          $("html, body").animate({ scrollTop: targetOffset }, 1000);
           return false;
         });
       }
@@ -135,7 +135,6 @@ $(document).ready(function () {
     }],
     projCount = 0,
     rowCount = 0,
-    // connectAside = $("<aside>"),
     divRow = $("<div>");
 
     divRow.addClass("row row-portfl-lm");
@@ -256,9 +255,7 @@ $(document).ready(function () {
       submitError = true;
     }
 
-    if (submitError) {
-      return;
-    }
+    if (submitError) return;
 
     const mailto_msg = `
 mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
@@ -271,8 +268,6 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
     $("#contact-name, #contact-email, #contact-message").val("");
   }
 
-
-
   $( "#navbarNav a" ).click(function() {
     $("#navbarNav").removeClass("show");
   });
@@ -284,7 +279,7 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
   // ====================================================================
   // CLEAR DIV FUNCTIONS
   // ====================================================================
-    // ------------------------------------------------------------------------------------------------
+  // ------------------------------------------------------------------------------------------------
   // clearContactErrorDivs empties out error validation divs
   //
   function clearContactErrorDivs() {
@@ -294,7 +289,7 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
     empty();
   }
 
-    // -------------------------------------------------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------
   // hide signup error divs so they don't take up space on the view
   //
   function hideContactErrorDivs() {
@@ -303,6 +298,5 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
     $(contactemailError).hide();
     $(contactmsgError).hide();
   }
-
 
 });

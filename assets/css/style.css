@@ -62,6 +62,7 @@ html {
       width: 100%;
       background: linear-gradient(to bottom right, #111826, #31456b);
       margin-bottom: 20%;
+      margin-top: 20px;
       height: 80px;
       line-height: 80px;
       position: fixed;
@@ -75,27 +76,23 @@ html {
         color: white;
         font-family: "Wellfleet", sans-serif;
         font-weight: bold; }
-      html body #header #nav {
-        float: left; }
-        html body #header #nav ul {
-          list-style: none;
-          display: block; }
-        html body #header #nav li {
-          float: left;
+      html body #header #nav ul {
+        list-style: none; }
+        html body #header #nav ul li {
           padding-left: 20px; }
-          html body #header #nav li a {
+          html body #header #nav ul li a {
             color: #111826;
             text-shadow: 1px 1px #C5D9C7;
             text-decoration: none;
             opacity: 0.6;
-            font-size: 11px;
+            font-size: 24px;
             font-family: "Wellfleet", sans-serif; }
-          html body #header #nav li a.active {
+          html body #header #nav ul li a.active {
             color: #111826;
             text-shadow: 1px 1px white;
             opacity: 1;
             border-bottom: 2px solid #111826; }
-          html body #header #nav li a:hover {
+          html body #header #nav ul li a:hover {
             color: #C5D9C7;
             text-shadow: 1px 1px #111826;
             opacity: 1; }
@@ -247,59 +244,51 @@ html {
       background-color: #1D5959;
       text-shadow: 1px 1px #1AD7E5; }
 
-/* small portrait size */
-@media only screen and (min-width: 327px) {
-  body h1 {
-    font-size: 55px; }
-  body h2 {
-    font-size: 40px; }
-  body h3 {
-    font-size: 25px;
-    text-align: center !important; }
-  body #header {
-    height: 80px !important;
-    margin-top: 20px !important; } }
-
 /* 'sm' media query */
 @media only screen and (min-width: 576px) {
-  body .aside-lm {
-    margin-left: 10%; }
-  body .intro-text {
-    left: 40% !important; }
   body #nav {
     float: left;
     margin: 1% 0% 5% 0%;
     padding: 0px 30px; }
-    body #nav li {
-      padding-left: 30px; }
-      body #nav li a {
-        color: white !important;
-        text-shadow: none !important; }
-      body #nav li a.active {
-        color: white !important;
-        text-shadow: 1px 1px #111826 !important; }
-      body #nav li a:hover {
-        color: white !important;
-        text-shadow: 1px 1px #111826 !important; }
+    body #nav ul {
+      display: block; }
+      body #nav ul li {
+        padding-left: 30px; }
+        body #nav ul li a {
+          color: white;
+          font-size: 24px;
+          text-shadow: none; }
+        body #nav ul li a.active {
+          color: white;
+          text-shadow: 1px 1px #111826; }
+        body #nav ul li a:hover {
+          color: white;
+          text-shadow: 1px 1px #111826; }
   body #About {
-    padding: 135px 30px 130px 30px !important; }
+    padding: 135px 30px 130px 30px; }
   body #Skills {
-    padding: 140px 30px 0 30px !important;
-    height: 900px !important; }
+    padding: 140px 30px 0 30px;
+    height: 900px; }
   body #Contact {
-    height: 800px !important;
-    padding: 120px 0 !important; } }
+    height: 800px;
+    padding: 120px 0; } }
 
 /* navbar font breakpoint media query */
-@media only screen and (min-width: 851px) {
-  #nav a {
-    font-size: 13.2px; } }
+@media only screen and (max-width: 851px) and (min-width: 327px) {
+  #nav ul {
+    display: block; }
+    #nav ul a {
+      font-size: 28.8px;
+      color: green; } }
 
-@media only screen and (max-width: 1013px) and (min-width: 851px) {
+@media only screen and (max-width: 1013px) and (min-width: 852) {
   .custom-brand {
-    font-size: 30px !important; }
-  #nav a {
-    font-size: 18.7px; }
+    font-size: 30px; }
+  #nav ul {
+    display: block; }
+    #nav ul a {
+      font-size: 40.8px;
+      color: lightgoldenrodyellow; }
   .media-links {
     height: 50px;
     /* equals max image height */
@@ -316,10 +305,10 @@ html {
     body #nav li {
       padding-left: 40px; }
   body #Portfolio {
-    padding: 135px 0 130px 0 !important;
-    height: 1500px !important; }
+    padding: 135px 0 130px 0;
+    height: 1500px; }
   body .image-container .caption-text {
-    font-size: 75% !important; } }
+    font-size: 75%; } }
 
 /* 'lg' media query */
 @media only screen and (min-width: 992px) {
@@ -337,8 +326,8 @@ html {
     body #nav li {
       padding-left: 60px; }
   body #Portfolio {
-    padding: 135px 0 130px 0 !important;
-    height: 1900px !important; } }
+    padding: 135px 0 130px 0;
+    height: 1900px; } }
 
 /* @media only screen and (min-width: $px-tblt-low) and (max-width: 350px) {
   .image-container .caption-text {
@@ -354,4 +343,31 @@ html {
       // width: $content-width-px;
       // margin: 0 auto;
     }
-} */
+}
+
+// small portrait size
+@media only screen and (min-width: $px-smph-portrait-size) {
+  body {
+    h1 {
+      font-size: $h1-size;
+    }
+    h2 {
+      font-size: $h2-size;
+    }
+    h3 {
+      font-size: $h3-size;
+      text-align: center;
+    }
+    #header {
+      height: 80px;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+
+
+
+
+*/
