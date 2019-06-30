@@ -204,12 +204,14 @@ $(document).ready(function () {
     console.log('connect with me');
     // build media list
     for (const elem of myMediaArr) {
-      var listElem = $("<li>"),
+      const listElem = $("<li>"),
           socialUrl = $("<a>"),
           mediaImg = $("<img>");
 
       socialUrl.attr("href", elem.mediaUrl).attr("target","_blank");
-      mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt).addClass("mb-2");
+      // mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt).addClass("mb-2");
+      mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt);
+
       if (elem.mediaImg === GITHUB_LOGO_IMG) {
         mediaImg.addClass("github-img");
       }
