@@ -209,7 +209,7 @@ $(document).ready(function () {
           mediaImg = $("<img>");
 
       socialUrl.attr("href", elem.mediaUrl).attr("target","_blank");
-      mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt);
+      mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt).addClass("mb-2");
       if (elem.mediaImg === GITHUB_LOGO_IMG) {
         mediaImg.addClass("github-img");
       }

@@ -253,7 +253,8 @@ html {
     margin: 1% 0% 5% 0%;
     padding: 0px 30px; }
     body #nav ul {
-      display: block !important; }
+      display: block;
+      width: 100%; }
       body #nav ul li {
         padding-left: 30px; }
         body #nav ul li a {
