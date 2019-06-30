@@ -35,7 +35,7 @@ html {
       z-index: 1;
       position: relative; }
     html body .center-burger {
-      margin-top: 20px; }
+      margin-top: 10px; }
     html body .clear {
       clear: both; }
     html body .intro-text {
@@ -64,6 +64,7 @@ html {
       margin-top: 20px;
       height: 80px;
       line-height: 80px;
+      display: block;
       position: fixed;
       z-index: 5;
       /* navigation bar */ }
@@ -77,6 +78,7 @@ html {
         font-weight: bold; }
       html body #header #nav ul {
         list-style: none;
+        width: max-content;
         background: linear-gradient(to bottom right, #111826, #31456b);
         line-height: 36px;
         /* Connect with me section */ }
@@ -248,31 +250,34 @@ html {
 
 /* 'sm' media query */
 @media only screen and (min-width: 576px) {
-  body #nav {
+  html body #header #nav {
     float: left;
-    margin: 1% 0% 5% 0%;
-    padding: 0px 30px; }
-    body #nav ul {
-      display: block;
-      width: 100%; }
-      body #nav ul li {
+    margin: 0% 0% 5% 0%;
+    padding: 0px 30px;
+    display: block; }
+    html body #header #nav ul {
+      background: none;
+      display: inline-flex; }
+      html body #header #nav ul li {
         padding-left: 30px; }
-        body #nav ul li a {
+        html body #header #nav ul li a {
           color: white;
-          font-size: 24px;
+          font-size: 10px;
           text-shadow: none; }
-        body #nav ul li a.active {
+        html body #header #nav ul li a.active {
           color: white;
           text-shadow: 1px 1px #111826; }
-        body #nav ul li a:hover {
+        html body #header #nav ul li a:hover {
           color: white;
           text-shadow: 1px 1px #111826; }
-  body #About {
+  html body .center-burger {
+    margin-top: 0px; }
+  html body #About {
     padding: 135px 30px 130px 30px; }
-  body #Skills {
+  html body #Skills {
     padding: 140px 30px 0 30px;
     height: 900px; }
-  body #Contact {
+  html body #Contact {
     height: 800px;
     padding: 120px 0; } }
 
