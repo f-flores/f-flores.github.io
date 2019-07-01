@@ -178,8 +178,8 @@ $(document).ready(function () {
   // fill out aside menu -- 'Connect With Me' Box
   //
   function fillConnectWithMeBoxes() {
-    var mediaLinks = $("<div>"),
-        mediaList = $("<ul>"),
+    var mediaLinks = $(".custom-xs-right").addClass("media-links"),
+        // mediaList = $("<ul>"),
         // myMediaArr is an array of objects which specifies each list element
         // in the 'Connect With Me' box
         myMediaArr = [{
@@ -200,7 +200,7 @@ $(document).ready(function () {
         index = 0;
 
     // cardTitle.html("<h4 class=\"text-center font-weight-bold\">Connect With Me</h4>");
-    mediaLinks.addClass("media-links");
+    // mediaLinks.addClass("media-links");
     console.log('connect with me');
     // build media list
     for (const elem of myMediaArr) {
@@ -217,10 +217,11 @@ $(document).ready(function () {
       }
       socialUrl.append(mediaImg);
       listElem.append(socialUrl);
-      mediaList.append(listElem);
+      // mediaList.append(listElem);
+      mediaLinks.append(listElem);
     }
-    mediaLinks.append(mediaList);
-    $(".connect-with-me").append(mediaLinks);
+    // mediaLinks.append(mediaList);
+    // $(".custom-xs-right").append(mediaLinks);
   }
 
   // validate contact form submission
