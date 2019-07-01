@@ -35,53 +35,59 @@ html body {
   html body header {
     width: 100%;
     background: linear-gradient(to bottom right, #111826, #31456b);
-    margin: 0 auto;
+    margin: 20px auto 0px auto;
     height: 80px;
     line-height: 80px;
     position: fixed;
     z-index: 5;
     /* navigation bar */ }
+    html body header .custom-xs-left {
+      width: 60%; }
+    html body header .custom-xs-right {
+      width: 40%; }
     html body header .custom-brand {
       text-decoration: none;
-      float: left;
       margin: 0px 0 0 20px;
-      font-size: 20px;
+      font-size: 24px;
       color: white;
       font-family: "Wellfleet", sans-serif;
       font-weight: bold; }
-    html body header #nav ul {
-      list-style: none;
-      width: max-content;
-      background: linear-gradient(to bottom right, #111826, #31456b);
-      line-height: 36px; }
-      html body header #nav ul li {
-        padding: 0px 20px; }
-        html body header #nav ul li a {
-          color: #111826;
-          text-shadow: 1px 1px #C5D9C7;
-          text-decoration: none;
-          opacity: 0.6;
-          font-size: 18px;
-          font-family: "Wellfleet", sans-serif; }
-        html body header #nav ul li a.active {
-          color: #111826;
-          text-shadow: 1px 1px white;
-          opacity: 1;
-          border-bottom: 2px solid #111826; }
-        html body header #nav ul li a:hover {
-          color: #C5D9C7;
-          text-shadow: 1px 1px #111826;
-          opacity: 1; }
-      html body header #nav ul .media-links {
-        height: 50px;
-        white-space: nowrap;
-        margin-top: 27.5px; }
-        html body header #nav ul .media-links img {
-          float: left;
-          max-width: 50px;
-          max-height: 50px;
-          vertical-align: middle;
-          margin-bottom: 10px; }
+    html body header #nav {
+      margin-top: -8px;
+      display: inline-flex; }
+      html body header #nav ul {
+        list-style: none;
+        width: max-content;
+        background: linear-gradient(to bottom right, #111826, #31456b);
+        line-height: 36px; }
+        html body header #nav ul li {
+          padding: 0px 20px; }
+          html body header #nav ul li a {
+            color: #111826;
+            text-shadow: 1px 1px #C5D9C7;
+            text-decoration: none;
+            opacity: 0.6;
+            font-size: 18px;
+            font-family: "Wellfleet", sans-serif; }
+          html body header #nav ul li a.active {
+            color: #111826;
+            text-shadow: 1px 1px white;
+            opacity: 1;
+            border-bottom: 2px solid #111826; }
+          html body header #nav ul li a:hover {
+            color: #C5D9C7;
+            text-shadow: 1px 1px #111826;
+            opacity: 1; }
+        html body header #nav ul .media-links {
+          height: 50px;
+          white-space: nowrap;
+          margin-top: 27.5px; }
+          html body header #nav ul .media-links img {
+            float: left;
+            max-width: 50px;
+            max-height: 50px;
+            vertical-align: middle;
+            margin-bottom: 10px; }
   html body .special-container {
     padding-left: 0px; }
   html body .center-burger {
@@ -246,35 +252,36 @@ html body {
     text-shadow: 1px 1px #1AD7E5; }
 
 /* 'sm' media query */
-@media only screen and (min-width: 768px) {
-  html body #header #nav {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  html body header .custom-brand {
+    font-size: 14px; }
+  html body header #nav {
     float: left;
     margin: 0% 0% 5% 0%;
-    padding: 0px 30px;
-    display: block; }
-    html body #header #nav ul {
+    padding: 0px 30px; }
+    html body header #nav ul {
       background: none;
       display: inline-flex;
       line-height: 80px; }
-      html body #header #nav ul li:first-child {
+      html body header #nav ul li:first-child {
         padding-left: 20px; }
-      html body #header #nav ul li {
+      html body header #nav ul li {
         padding-left: 5px; }
-        html body #header #nav ul li a {
+        html body header #nav ul li a {
           color: white;
           font-size: 10px;
           text-shadow: none; }
-        html body #header #nav ul li a.active {
+        html body header #nav ul li a.active {
           color: white;
           text-shadow: 1px 1px #111826; }
-        html body #header #nav ul li a:hover {
+        html body header #nav ul li a:hover {
           color: white;
           text-shadow: 1px 1px #111826; }
-      html body #header #nav ul .media-links {
+      html body header #nav ul .media-links {
         height: 25px;
         white-space: nowrap;
         margin-top: 5px; }
-        html body #header #nav ul .media-links img {
+        html body header #nav ul .media-links img {
           float: right;
           max-width: 25px;
           max-height: 25px;
