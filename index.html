@@ -8,7 +8,8 @@
   <title>About | Fabian Flores</title>
   <!--   Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
   <!--  ================= -->
@@ -20,38 +21,39 @@
 </head>
 
 <body>
-  <header id="header">
-    <div class="content">
-      <div id="logo">
-        <a class="custom-brand" href="#">Fabian Flores</a>
-      </div>
-      <nav id="nav" class="navbar navbar-expand-md navbar-dark">
-
-        <button class="navbar-toggler center-burger" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarNav" class="collapse navbar-collapse">
-          <div class="navbar-nav">
-            <ul>
-              <li><a href="#Intro" class="active" title="Next Section">Intro</a></li>
-              <li><a href="#About" title="Next Section">About</a></li>
-              <li><a href="#Portfolio" title="Next Section">Porfolio</a></li>
-              <li><a href="#Skills" title="Next Section">Skills</a></li>
-              <li><a href="#Contact" title="Next Section">Contact</a></li>
-              <li>
-                <a href="https://docs.google.com/document/d/1d6rqXkgYblZU4ltmFvBkr5XoiauDFgYgRKCInztzY1Q"
-                  target="_blank">R&eacute;sum&eacute;</a>
-              </li>
-              <div class="connect-block">
-                <li class="connect-with-me"></li>
-              </div>
-            </ul>
-          </div>
+  <div class="container-fluid special-container">
+    <header class="content">
+      <div class="row">
+        <div class="col-xs-3 text-center">
+          <a class="custom-brand" href="#">Fabian Flores</a>
         </div>
-      </nav>
-    </div>
-  </header>
+        <div id="nav" class="col-xs-9 navbar navbar-expand-sm navbar-dark">
+          <div class="custom-xs-left text-center">
+            <button class="navbar-toggler center-burger" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+              <div class="navbar-nav">
+                <ul>
+                  <!-- <div class="mid-nav-section"> -->
+                  <li><a href="#Intro" class="active" title="Next Section">Intro</a></li>
+                  <li><a href="#About" title="Next Section">About</a></li>
+                  <li><a href="#Portfolio" title="Next Section">Porfolio</a></li>
+                  <li><a href="#Skills" title="Next Section">Skills</a></li>
+                  <li><a href="#Contact" title="Next Section">Contact</a></li>
+                  <li>
+                    <a href="https://docs.google.com/document/d/1d6rqXkgYblZU4ltmFvBkr5XoiauDFgYgRKCInztzY1Q"
+                      target="_blank">R&eacute;sum&eacute;</a>
+                  </li>
+                  <div class="custom-xs-right text-center">
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+  </div>
 
   <!-- SECTIONS START  -->
   <!-- Intro Section -->
@@ -73,7 +75,7 @@
     <div class="container">
       <div class="justify-content-center">
         <div class="row">
-          <article class="col-xs-12 col-sm-9">
+          <article class="col-xs-12 col-sm-12 col-md-9">
             <div class="card custom-bg">
               <div class="card-title">
                 <h2>About Me</h2>
@@ -203,10 +205,10 @@
 
                 <div class="form-row">
                   <label class="bg-info text-light col-2 custom-label" for="email">Your email:</label>
-                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="col-6 form-control" id="contact-email" placeholder="user@example.com"
-                    required="required">
-                    <span class="mb-2 px-2 ml-1 col-3" id="contactemail-error">
-                    </span>
+                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="col-6 form-control"
+                    id="contact-email" placeholder="user@example.com" required="required">
+                  <span class="mb-2 px-2 ml-1 col-3" id="contactemail-error">
+                  </span>
                 </div>
 
                 <div class="form-row mb-2">

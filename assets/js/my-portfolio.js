@@ -23,7 +23,7 @@ $(document).ready(function () {
         $(this).click(function () {
           $("#nav li a").removeClass("active");
           $(this).addClass('active');
-          $('html, body').animate({ scrollTop: targetOffset }, 1000);
+          $("html, body").animate({ scrollTop: targetOffset }, 1000);
           return false;
         });
       }
@@ -135,7 +135,6 @@ $(document).ready(function () {
     }],
     projCount = 0,
     rowCount = 0,
-    // connectAside = $("<aside>"),
     divRow = $("<div>");
 
     divRow.addClass("row row-portfl-lm");
@@ -179,8 +178,8 @@ $(document).ready(function () {
   // fill out aside menu -- 'Connect With Me' Box
   //
   function fillConnectWithMeBoxes() {
-    var mediaLinks = $("<div>"),
-        mediaList = $("<ul>"),
+    var mediaLinks = $(".custom-xs-right").addClass("media-links"),
+        // mediaList = $("<ul>"),
         // myMediaArr is an array of objects which specifies each list element
         // in the 'Connect With Me' box
         myMediaArr = [{
@@ -201,25 +200,28 @@ $(document).ready(function () {
         index = 0;
 
     // cardTitle.html("<h4 class=\"text-center font-weight-bold\">Connect With Me</h4>");
-    mediaLinks.addClass("media-links");
+    // mediaLinks.addClass("media-links");
     console.log('connect with me');
     // build media list
     for (const elem of myMediaArr) {
-      var listElem = $("<li>"),
+      const listElem = $("<li>"),
           socialUrl = $("<a>"),
           mediaImg = $("<img>");
 
       socialUrl.attr("href", elem.mediaUrl).attr("target","_blank");
+      // mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt).addClass("mb-2");
       mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt);
+
       if (elem.mediaImg === GITHUB_LOGO_IMG) {
         mediaImg.addClass("github-img");
       }
       socialUrl.append(mediaImg);
       listElem.append(socialUrl);
-      mediaList.append(listElem);
+      // mediaList.append(listElem);
+      mediaLinks.append(listElem);
     }
-    mediaLinks.append(mediaList);
-    $(".connect-with-me").append(mediaLinks);
+    // mediaLinks.append(mediaList);
+    // $(".custom-xs-right").append(mediaLinks);
   }
 
   // validate contact form submission
@@ -256,9 +258,7 @@ $(document).ready(function () {
       submitError = true;
     }
 
-    if (submitError) {
-      return;
-    }
+    if (submitError) return;
 
     const mailto_msg = `
 mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
@@ -271,8 +271,6 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
     $("#contact-name, #contact-email, #contact-message").val("");
   }
 
-
-
   $( "#navbarNav a" ).click(function() {
     $("#navbarNav").removeClass("show");
   });
@@ -284,7 +282,7 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
   // ====================================================================
   // CLEAR DIV FUNCTIONS
   // ====================================================================
-    // ------------------------------------------------------------------------------------------------
+  // ------------------------------------------------------------------------------------------------
   // clearContactErrorDivs empties out error validation divs
   //
   function clearContactErrorDivs() {
@@ -294,7 +292,7 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
     empty();
   }
 
-    // -------------------------------------------------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------
   // hide signup error divs so they don't take up space on the view
   //
   function hideContactErrorDivs() {
@@ -303,6 +301,5 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
     $(contactemailError).hide();
     $(contactmsgError).hide();
   }
-
 
 });
