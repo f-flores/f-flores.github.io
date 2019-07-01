@@ -179,7 +179,6 @@ $(document).ready(function () {
   //
   function fillConnectWithMeBoxes() {
     var mediaLinks = $(".custom-xs-right").addClass("media-links"),
-        // mediaList = $("<ul>"),
         // myMediaArr is an array of objects which specifies each list element
         // in the 'Connect With Me' box
         myMediaArr = [{
@@ -199,9 +198,6 @@ $(document).ready(function () {
         }],
         index = 0;
 
-    // cardTitle.html("<h4 class=\"text-center font-weight-bold\">Connect With Me</h4>");
-    // mediaLinks.addClass("media-links");
-    console.log('connect with me');
     // build media list
     for (const elem of myMediaArr) {
       const listElem = $("<li>"),
@@ -209,7 +205,6 @@ $(document).ready(function () {
           mediaImg = $("<img>");
 
       socialUrl.attr("href", elem.mediaUrl).attr("target","_blank");
-      // mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt).addClass("mb-2");
       mediaImg.attr("src", IMG_DIR + elem.mediaImg).attr("alt", elem.mediaAlt);
 
       if (elem.mediaImg === GITHUB_LOGO_IMG) {
@@ -217,11 +212,8 @@ $(document).ready(function () {
       }
       socialUrl.append(mediaImg);
       listElem.append(socialUrl);
-      // mediaList.append(listElem);
       mediaLinks.append(listElem);
     }
-    // mediaLinks.append(mediaList);
-    // $(".custom-xs-right").append(mediaLinks);
   }
 
   // validate contact form submission

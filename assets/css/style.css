@@ -100,7 +100,7 @@ html body {
   html body .intro-text {
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: 10%;
     text-align: center;
     opacity: 0.9; }
   html body .custom-hcenter {
@@ -299,7 +299,13 @@ html body {
     height: 900px; }
   html body #Contact {
     height: 800px;
-    padding: 120px 0; } }
+    padding: 120px 0; }
+  html body .intro-text {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    text-align: center;
+    opacity: 0.9; } }
 
 /* navbar font breakpoint media query */
 @media only screen and (min-width: 630px) {
@@ -330,6 +336,12 @@ html body {
           max-height: 30px;
           vertical-align: middle;
           margin-bottom: 0px; }
+  html body .intro-text {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    text-align: center;
+    opacity: 0.9; }
   html body .image-container .caption-text {
     position: absolute;
     z-index: 2;
@@ -364,7 +376,13 @@ html body {
       margin-top: 20px; }
       html body header #nav ul .media-links img {
         max-width: 40px;
-        max-height: 40px; } }
+        max-height: 40px; }
+  html body .intro-text {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    text-align: center;
+    opacity: 0.9; } }
 
 @media only screen and (min-width: 1130px) {
   html body header .custom-brand {
@@ -380,7 +398,13 @@ html body {
       margin-top: 17.5px; }
       html body header #nav ul .media-links img {
         max-width: 45px;
-        max-height: 45px; } }
+        max-height: 45px; }
+  html body .intro-text {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+    opacity: 0.9; } }
 
 @media only screen and (min-width: 1277px) {
   html body header .custom-brand {
