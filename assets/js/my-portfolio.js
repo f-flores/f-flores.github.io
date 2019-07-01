@@ -279,6 +279,18 @@ mailto:ffflores1@outlook.com?subject=Portfolio Page Message&body=${contactMsg}
   fillConnectWithMeBoxes();
   $(document).on("click", "#contact-submit", handleContactForm);
 
+  // refresh page on browser resize
+  // src: https://www.sitepoint.com/jquery-refresh-page-browser-resize/
+  // ====================================================================
+  $(window).bind('resize', function(e)
+  {
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+      this.location.reload(false); /* false to get page from cache */
+    }, 200);
+  });
+
   // ====================================================================
   // CLEAR DIV FUNCTIONS
   // ====================================================================
