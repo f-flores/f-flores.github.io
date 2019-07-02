@@ -111,7 +111,9 @@ html body {
     height: 35px !important;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: bold !important; }
+    font-size: 80%;
+    font-weight: bold !important;
+    line-height: 35px; }
   html body #particles-js {
     height: 90%;
     background: linear-gradient(to bottom right, #31456b, #111826);
@@ -233,7 +235,7 @@ html body {
   html body input[type=email],
   html body textarea {
     display: block;
-    width: 50%; }
+    width: 80%; }
   html body input[type=text],
   html body input[type=email],
   html body textarea {
