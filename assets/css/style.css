@@ -11,9 +11,7 @@ html body {
   /* outline when hovering over an image that is intended to be a link */
   /* "clearfix" hack to neatly align block elements */
   /* styles 960 main content box */
-  /* styles left content box */
-  /* attributes for portfolio project content box */
-  /* caption_text styles the "text over image" caption on top of each portfolio image */ }
+  /* styles left content box */ }
   html body h1 {
     text-shadow: 2px 2px black; }
   html body h2 {
@@ -39,8 +37,7 @@ html body {
     height: 80px;
     line-height: 80px;
     position: fixed;
-    z-index: 5;
-    /* navigation bar */ }
+    z-index: 5; }
     html body header .custom-xs-left {
       width: 60%; }
     html body header .custom-xs-right {
@@ -205,9 +202,7 @@ html body {
     background-color: #4aaaa5;
     width: 50%;
     height: 20%;
-    /* !important; */
     top: 55%;
-    /* !important; */
     padding: 10px 0px 0px 0px;
     font-size: 110%;
     color: white;
@@ -256,7 +251,6 @@ html body {
     background-color: #1D5959;
     text-shadow: 1px 1px #1AD7E5; }
 
-/* 'sm' media query */
 @media only screen and (min-width: 576px) and (max-width: 629px) {
   html body header .custom-brand {
     font-size: 12px; }
@@ -309,7 +303,6 @@ html body {
     text-align: center;
     opacity: 0.9; } }
 
-/* navbar font breakpoint media query */
 @media only screen and (min-width: 630px) {
   html body header .custom-brand {
     font-size: 12px; }
@@ -352,9 +345,7 @@ html body {
     background-color: #4aaaa5;
     width: 50%;
     height: 20%;
-    /* !important; */
     top: 55%;
-    /* !important; */
     padding: 0px 0px 0px 0px;
     font-size: 80%;
     color: white;
